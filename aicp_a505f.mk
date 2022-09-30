@@ -31,14 +31,14 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := a505f
-PRODUCT_NAME := aosp_a505f
+PRODUCT_NAME := aicp_a505f
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A505F
 PRODUCT_MANUFACTURER := samsung
